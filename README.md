@@ -281,9 +281,9 @@ The SharePoint `ShoesOrders` list is connected directly to Power BI to generate 
 
 ---
 
-Next up: How the dashboard refreshes, how to schedule it, and how to publish it to SharePoint or as a web report.
+## 🌟 Inspiration
 
-
+This project was inspired by my lifelong passion for football — especially women's football. Since I was a child, I've been fascinated by how the sport is growing and how female players are gaining visibility. I’ve also noticed how brands are still adapting footwear designs to the specific needs of women’s feet. Golize is my contribution to that change — blending tech with fashion and sport to empower the next generation of women athletes.
 
 ---
 
