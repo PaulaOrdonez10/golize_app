@@ -183,6 +183,107 @@ Clear(Orders);;
 
 ---
 
+# ⚙️ Power Automate Integration
+
+After placing an order, the customer receives a personalized email including a stylish HTML summary of their order.
+
+### 🔁 Flow Steps
+
+1. **Power Apps Trigger (V2)** – Collects `Orders`, `UserName`, and `UserEmail`
+2. **Initialize variable** – Prepares a temporary variable if needed for flow logic
+3. **Parse JSON** – Extracts the collection of ordered items using the schema below
+4. **Create HTML Table** – Builds a customized table with formatted order details
+5. **Compose HTML (Redactar)** – Adds inline CSS styles to the email
+6. **Send Email (V2)** – Sends the final styled order summary to the user
+
+---
+
+### JSON Schema (Parse JSON)
+```json
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Cantidad": { "type": "string" },
+      "Category": { "type": "string" },
+      "Customer_name": { "type": "string" },
+      "Fecha": { "type": "string" },
+      "Name": { "type": "string" },
+      "Price": { "type": "string" },
+      "Size": {
+        "type": "object",
+        "properties": {
+          "Value": { "type": "string" }
+        }
+      },
+      "Total": { "type": "integer" },
+      "Type": { "type": "string" },
+      "user": { "type": "string" }
+    },
+    "required": [
+      "Cantidad", "Category", "Customer_name", "Fecha", "Name", "Price",
+      "Size", "Total", "Type", "user"
+    ]
+  }
+}
+```
+
+---
+
+### 🖌️ HTML Table Styling Used
+```html
+<style>
+table {
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table tbody td {
+  font-size: 13px;
+}
+table thead {
+  background: #1C6EA4;
+  border-bottom: 2px solid #444444;
+}
+table thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid #D0E4F5;
+}
+table thead th:first-child {
+  border-left: none;
+}
+</style>
+```
+
+---
+
+# 📊 Power BI Dashboard
+
+The SharePoint `ShoesOrders` list is connected directly to Power BI to generate a dynamic dashboard.
+
+### Metrics Tracked:
+- Product Category breakdown
+- Type and Size distribution
+- Count of products by Date
+- Total Revenue by Date
+- Best-Selling Products
+
+![Image](https://github.com/user-attachments/assets/e7ba8b5e-c59b-4ea2-b96b-4edadab566d9)
+
+---
+
+Next up: How the dashboard refreshes, how to schedule it, and how to publish it to SharePoint or as a web report.
+
+
 
 ---
 
