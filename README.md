@@ -52,6 +52,8 @@ The app contains **4 main screens**:
 
 ### 1️⃣ Welcome Screen
 
+![Image](https://github.com/user-attachments/assets/e1b1f314-8d30-4fdb-9319-0cfd7631b50d)
+
 **Purpose**: To collect user's name and email before accessing the store.
 
 **Components**:
@@ -72,7 +74,7 @@ Set(UserEmail; Input_email.Text);;
 
 ### 2️⃣ Main Menu Screen
 
-![Image](https://github.com/user-attachments/assets/e1b1f314-8d30-4fdb-9319-0cfd7631b50d)
+![Image](https://github.com/user-attachments/assets/8c533aa6-a75a-47fd-930d-76aa57ec7f76)
 
 **Purpose**: To filter products by category and type.
 
@@ -95,6 +97,8 @@ Filter(
 ---
 
 ### 3️⃣ Detail Screen
+
+![Image](https://github.com/user-attachments/assets/317b2467-d070-44a2-a6f4-4ab940878bd0)
 
 **Purpose**: To show product details and let the user select size and quantity.
 
@@ -129,6 +133,8 @@ Navigate('Main Menu'; ScreenTransition.Fade);;
 ---
 
 ### 4️⃣ Orders Screen
+
+![Image](https://github.com/user-attachments/assets/8eef3e26-17f3-42f5-901b-1dd9bad0891c)
 
 **Purpose**: Shows the customer’s order summary and allows submission.
 
@@ -177,7 +183,6 @@ Clear(Orders);;
 
 ---
 
-Next steps will include how this data is sent using **Power Automate**, and visualized with **Power BI**.
 
 ---
 
