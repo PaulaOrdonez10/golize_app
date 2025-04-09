@@ -72,6 +72,8 @@ Set(UserEmail; Input_email.Text);;
 
 ### 2️⃣ Main Menu Screen
 
+![Image](https://github.com/user-attachments/assets/e1b1f314-8d30-4fdb-9319-0cfd7631b50d)
+
 **Purpose**: To filter products by category and type.
 
 **Components**:
