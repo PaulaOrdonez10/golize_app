@@ -1,4 +1,4 @@
-# 👟 Golize – Power Apps App Overview (Part 1)
+# 👟 Golize – Power Apps, Powwer Automate, Share Point and Power Bi
 
 > *A modern sneaker ordering experience for young women, built using Microsoft Power Platform.*
 
